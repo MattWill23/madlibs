@@ -4,33 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="inputs">
+        <span><input type="text" id="adjective1" placeholder="adjective" size="6"></span>
+        <span><input type="text" id="noun1" placeholder="noun" size="6"></span>
+        <span><input type="text" id="exclamation" placeholder="silly exclamation" size="6"></span>
+        <span><input type="text" id="familyMember" placeholder="family member" size="6"></span>
+        <span><input type="text" id="food" placeholder="food" size="6"></span>
+        <span><input type="text" id="object" placeholder="object" size="6"></span>
+        <span><input type="text" id="adjective2" placeholder="adjective" size="6"></span>
+        <span><input type="text" id="animal" placeholder="animal" size="6"></span>
+        <span><input type="text" id="clothing" placeholder="piece of clothing" size="6"></span>
+        <span><input type="text" id="place" placeholder="place" size="6"></span>
+        <span><input type="text" id="sound" placeholder="sound" size="6"></span>
+        <span><input type="text" id="subject" placeholder="boring subject" size="6"></span>
+        <span><input type="text" id="friend" placeholder="friend's name" size="6"></span>
+        <span><input type="text" id="danceMove" placeholder="dance move" size="6"></span>
+        <span><input type="text" id="holiday" placeholder="made-up holiday" size="6"></span>
+        <span><input type="text" id="pluralNoun" placeholder="plural noun" size="6"></span>
+        <span><input type="text" id="adjective3" placeholder="adjective" size="6"></span>
+        <button id="generateBtn">Generate Story</button>
+    </div>
 
-    
- <div class="card">
-  <div class="first-content">
-    <span> <h5>My Wacky Day</h5></span>
-  </div>
-  <div class="second-content">
-    <h4>One day, I woke up feeling [adjective]. I stumbled out of bed, stepped on a [noun], and shouted, "[silly exclamation]!"
+    <div id="story" style="display: none;">
+        <div class="card">
+            <h5>My Wacky Day</h5>
+            <h6 id="storyText">One day, I woke up feeling <span class="user-input">[adjective]</span>. I stumbled out of bed, stepped on a <span class="user-input">[noun]</span>, and shouted, "<span class="user-input">[silly exclamation]</span>!"
 
-Downstairs, my [family member] was eating a gigantic bowl of [food], using a [object] as a spoon. "It's a new trend," they said, looking extremely [adjective].
+Downstairs, my <span class="user-input">[family member]</span> was eating a gigantic bowl of <span class="user-input">[food]</span>, using a <span class="user-input">[object]</span> as a spoon. "It's a new trend," they said, looking extremely <span class="user-input">[adjective]</span>.
 
-On my way to school, a [animal] wearing a [piece of clothing] stopped me and asked for directions to the nearest [place]. I tried to answer, but all that came out was a loud [sound].
+On my way to school, a <span class="user-input">[animal]</span> wearing a <span class="user-input">[piece of clothing]</span> stopped me and asked for directions to the nearest <span class="user-input">[place]</span>. I tried to answer, but all that came out was a loud <span class="user-input">[sound]</span>.
+When I finally arrived, my teacher announced we'd be taking a pop quiz on <span class="user-input">[very boring subject]</span>. Everyone groaned except <span class="user-input">[name of friend]</span>, who started doing a <span class="user-input">[dance move]</span> for absolutely no reason.
 
-When I finally arrived, my teacher announced we'd be taking a pop quiz on [very boring subject]. Everyone groaned except [name of friend], who started doing a [dance move] for absolutely no reason.
+By the end of the day, the principal declared it "National <span class="user-input">[made-up holiday]</span> Day," and we all celebrated by throwing <span class="user-input">[plural noun]</span> into the air.
 
-By the end of the day, the principal declared it "National [made-up holiday] Day," and we all celebrated by throwing [plural noun] into the air.
-
-It was honestly the most [adjective] day of my life.</h4>
-  </div>
-
-
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-
+It was honestly the most <span class="user-input">[adjective]</span> day of my life.</h6>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
